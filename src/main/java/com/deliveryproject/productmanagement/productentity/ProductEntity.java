@@ -1,4 +1,4 @@
-package com.deliveryproject.productmanagement;
+package com.deliveryproject.productmanagement.productentity;
 
 import javax.persistence.*;
 
