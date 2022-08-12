@@ -23,7 +23,7 @@ public class ProductController {
 
     @GetMapping("/{Id}")
     public Optional<ProductEntity> findById(@PathVariable("Id") int Id) {
-        return productService.findByRef(Id);
+        return productService.findById(Id);
     }
 
     @PostMapping

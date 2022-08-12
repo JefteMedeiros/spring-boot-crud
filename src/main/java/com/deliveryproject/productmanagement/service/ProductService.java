@@ -7,7 +7,7 @@ import java.util.Optional;
 
 public interface ProductService {
     List<ProductEntity> listAllProducts();
-    Optional<ProductEntity> findByRef(int Reference);
+    Optional<ProductEntity> findById(int Id);
     ProductEntity registerProduct(ProductEntity productEntity);
     ProductEntity updateProduct(ProductEntity productEntity);
     void deleteProduct(int id);

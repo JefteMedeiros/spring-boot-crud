@@ -9,11 +9,11 @@ import java.util.List;
 import java.util.Optional;
 
 @Service
-public class EmployeeServiceImpl implements ProductService {
+public class ProductServiceImpl implements ProductService {
 
     private final ProductRepository productRepository;
 
-    public EmployeeServiceImpl(ProductRepository productRepository) {
+    public ProductServiceImpl(ProductRepository productRepository) {
         this.productRepository = productRepository;
     }
 
@@ -23,7 +23,7 @@ public class EmployeeServiceImpl implements ProductService {
     }
 
     @Override
-    public Optional<ProductEntity> findByRef(int Id) {
+    public Optional<ProductEntity> findById(int Id) {
         return productRepository.findById(Id);
     }
 
